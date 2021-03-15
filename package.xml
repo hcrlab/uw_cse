@@ -1,0 +1,23 @@
+<package format="2">
+  <name>uw_cse</name>
+  <version>0.1.0</version>
+  <description>
+    Maps, annotations and simulation environments for the computer science buildings at the University of Washington
+  </description>
+  <license>MIT</license>
+  <maintainer email="nswalker@cs.washington.edu">Nick Walker</maintainer>
+  <author email="nswalker@cs.washington.edu">Nick Walker</author>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>catkin</exec_depend>
+  <exec_depend>rospack</exec_depend>
+  
+  <depend>gazebo_ros</depend>
+  
+  <export>
+    <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
+  </export>
+
+</package>
